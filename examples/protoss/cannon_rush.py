@@ -51,7 +51,7 @@ class CannonRushBot(sc2.BotAI):
                         break
 
 def main():
-    sc2.run_game(sc2.maps.get("(2)CatalystLE"), [
+    sc2.run_game(sc2.maps.get("Abyssal Reef LE"), [
         Bot(Race.Protoss, CannonRushBot()),
         Computer(Race.Protoss, Difficulty.Medium)
     ], realtime=False)

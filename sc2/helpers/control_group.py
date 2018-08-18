@@ -13,16 +13,16 @@ class ControlGroup(set):
 
     @property
     def empty(self):
-        return len(self)
+        return self.amount == 0
 
-    def add_unit(self, unit):
+    def add_unit(self, units):
         self.add(unit.tag)
 
     def add_units(self, units):
         for unit in units:
             self.add_unit(unit)
 
-    def remove_unit(self, unit):
+    def remove_unit(self, units):
         self.remove(unit.tag)
 
     def remove_units(self, units):

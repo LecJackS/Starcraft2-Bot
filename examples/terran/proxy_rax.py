@@ -54,7 +54,7 @@ class ProxyRaxBot(sc2.BotAI):
                 self.attack_groups.remove(ac)
 
 def main():
-    sc2.run_game(sc2.maps.get("(2)CatalystLE"), [
+    sc2.run_game(sc2.maps.get("Sequencer LE"), [
         Bot(Race.Terran, ProxyRaxBot()),
         Computer(Race.Zerg, Difficulty.Hard)
     ], realtime=False)
