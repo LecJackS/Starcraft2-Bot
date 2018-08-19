@@ -18,6 +18,33 @@ You'll need Python 3.6 or newer.
 pip3 install --user --upgrade sc2
 ```
 
+
+## Requirements
+
+```
+pip3 install websockets
+conda install opencv
+```
+
+## Game Path
+
+If `CRITICAL:sc2.paths installation not found`
+
+```
+#on Starcraft2-Bot/sc2 folder, edit path.py:
+BASEDIR = {
+    "Windows": "C:/Program Files (x86)/StarCraft II",
+    "Darwin": "/Applications/StarCraft II",
+    "Linux": "~/StarCraftII"
+}
+```
+
+## Maps
+
+Maybe you need to create a lower case `maps` folder:
+
+https://github.com/Dentosal/python-sc2/issues/105
+
 Please note that not all commits are not released to PyPI. Releases are tagged with version number. You can see latest released versions from [tags page](https://github.com/Dentosal/python-sc2/tags).
 
 You'll also need an StarCraft II executable. If you are running Windows or macOS, just install the normal SC2 from blizzard app. [The free starter edition works too.](https://us.battle.net/account/sc2/starter-edition/). Linux users must use the [Linux binary](https://github.com/Blizzard/s2client-proto#downloads).
