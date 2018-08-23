@@ -15,15 +15,17 @@ For automaticly running multiple matches, check out [Dentosal/sc2-bot-match-runn
 You'll need Python 3.6 or newer.
 
 ```
-pip3 install --user --upgrade sc2
+pip install --user --upgrade sc2
 ```
 
 
 ## Requirements
 
 ```
-pip3 install websockets
+pip install websockets
 conda install opencv
+# to prevent some async errors
+pip install tornado==4.5.3
 ```
 
 ## Game Path
